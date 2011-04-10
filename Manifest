@@ -6,6 +6,7 @@ Rakefile
 init.rb
 lib/acts_as_tree.rb
 lib/array.rb
+lib/browser_detector.rb
 lib/date.rb
 lib/hash.rb
 lib/mh_extensions.rb
@@ -13,4 +14,5 @@ lib/rand.rb
 lib/range.rb
 lib/string.rb
 lib/string_ext.rb
+lib/txt_file_handler.rb
 Manifest

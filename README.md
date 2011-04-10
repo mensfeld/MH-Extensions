@@ -10,7 +10,7 @@ and in your Gemfile:
 
 ## About
 
-Package of usefull ruby basic classes (and not only) extensions. For more details view any of files located in `lib/`
+Package of usefull ruby basic classes extensions and some other usefull libs. For more details view any of files located in `lib/`
 
 ## Note on Patches/Pull Requests
  

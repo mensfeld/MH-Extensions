@@ -6,4 +6,6 @@ require "rand"
 require "range"
 require "string"
 require "string_ext"
+require "browser_detector"
+require "txt_file_handler"
 
