@@ -70,3 +70,6 @@ class ActiveRecord::Base
   end
 
 end
+
+#ActiveRecord::Base.send(:include, ActiveRecordExtensions)
+

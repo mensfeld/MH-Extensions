@@ -1,4 +1,3 @@
-require "acts_as_tree"
 require "array"
 require "date"
 require "hash"
@@ -8,4 +7,4 @@ require "string"
 require "string_ext"
 require "browser_detector"
 require "txt_file_handler"
-
+require "acts_as_tree_ext"

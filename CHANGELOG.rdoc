@@ -1,2 +1,4 @@
+= Version 0.1.1
+* Fixes for acts_as_tree_ext
 = Version 0.1.0
 * Gem existence started

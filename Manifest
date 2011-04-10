@@ -4,7 +4,7 @@ MIT-LICENSE
 README.md
 Rakefile
 init.rb
-lib/acts_as_tree.rb
+lib/acts_as_tree_ext.rb
 lib/array.rb
 lib/browser_detector.rb
 lib/date.rb
