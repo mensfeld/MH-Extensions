@@ -1,5 +1,5 @@
 require "array"
-require "date"
+require "date_ext"
 require "hash"
 require "rand"
 require "range"

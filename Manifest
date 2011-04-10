@@ -7,7 +7,7 @@ init.rb
 lib/acts_as_tree_ext.rb
 lib/array.rb
 lib/browser_detector.rb
-lib/date.rb
+lib/date_ext.rb
 lib/hash.rb
 lib/mh_extensions.rb
 lib/rand.rb
