@@ -1,6 +1,7 @@
 CHANGELOG.rdoc
 Gemfile
 MIT-LICENSE
+Manifest
 README.md
 Rakefile
 init.rb
@@ -15,4 +16,3 @@ lib/range.rb
 lib/string.rb
 lib/string_ext.rb
 lib/txt_file_handler.rb
-Manifest

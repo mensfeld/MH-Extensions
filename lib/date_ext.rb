@@ -8,3 +8,4 @@ class Date
     self.civil(s[model][:"#{name}(1i)"].to_i,s[model][:"#{name}(2i)"].to_i,s[model][:"#{name}(3i)"].to_i)
   end
 end
+
