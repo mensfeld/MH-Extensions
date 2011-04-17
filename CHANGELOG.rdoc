@@ -1,3 +1,5 @@
+= Version 0.1.5
+* Autoloading all stuff from ActiveRecord extensions in after_initialize callback
 = Version 0.1.4
 * Added default assigment for updated_by when created_by is assigned
 = Version 0.1.3

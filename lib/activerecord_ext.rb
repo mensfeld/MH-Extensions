@@ -29,4 +29,15 @@ end
 
 ActiveRecord::Base.send(:include, ArMH::Extensions)
 
-
+class Railtie < Rails::Railtie
+  initializer "app.trigger_extensions_4_all_ar_models" do |app|
+    app.config.after_initialize do
+      ActiveRecord::Base.send(:descendants).each do |model|
+        begin
+          model.mh_extensions
+        rescue
+        end
+      end
+    end
+  end
+end
