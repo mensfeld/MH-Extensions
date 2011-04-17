@@ -16,7 +16,7 @@ module ArMH
         if self.column_names.include?('created_by') && self.column_names.include?('updated_by')
           self.send(:define_method, "created_by=".to_sym) do |author|
             self.updated_by=author if self.updated_by.nil? || self.updated_by.length == 0
-            super
+            super author
           end
         end
       end
