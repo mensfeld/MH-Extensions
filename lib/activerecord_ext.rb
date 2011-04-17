@@ -29,6 +29,17 @@ end
 
 ActiveRecord::Base.send(:include, ArMH::Extensions)
 
+# Lil workaround 4 Rails development evn
+if Rails.env == 'development'
+  class ActiveRecord::Base
+    after_initialize :mh_extensions
+
+    def mh_extensions
+      self.class.mh_extensions
+    end
+  end
+end
+
 class Railtie < Rails::Railtie
   initializer "app.trigger_extensions_4_all_ar_models" do |app|
     app.config.after_initialize do
