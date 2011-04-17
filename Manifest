@@ -5,6 +5,7 @@ Manifest
 README.md
 Rakefile
 init.rb
+lib/activerecord_ext.rb
 lib/acts_as_tree_ext.rb
 lib/array.rb
 lib/browser_detector.rb

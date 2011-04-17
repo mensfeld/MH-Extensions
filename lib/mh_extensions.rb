@@ -8,3 +8,5 @@ require "string_ext"
 require "browser_detector"
 require "txt_file_handler"
 require "acts_as_tree_ext"
+require "activerecord_ext"
+
