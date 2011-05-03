@@ -52,3 +52,10 @@ class Railtie < Rails::Railtie
     end
   end
 end
+
+class ActiveRecord::Base
+  class << self
+    # Shorter name
+    alias :human :human_attribute_name
+  end
+end
