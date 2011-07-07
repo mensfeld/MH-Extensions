@@ -95,8 +95,7 @@ class String
   # Examples:
   # "Fixnum".to_class #=> Fixnum
   # "Something".to_class #=> nil
-  class String
-    def to_class
+  def to_class
       chain = self.split "::"
       klass = Kernel
       chain.each do |klass_string|
@@ -106,6 +105,18 @@ class String
     rescue NameError
       nil
     end
+
+  def camelize(first_letter_in_uppercase = true)
+    if first_letter_in_uppercase
+      self.to_s.gsub(/\/(.?)/) { "::#{$1.upcase}" }.gsub(/(?:^|_)(.)/) { $1.upcase }
+    else
+      self.to_s[0].chr.downcase + camelize(self)[1..-1]
+    end
+  end
+
+  def camelize!(first_letter_in_uppercase = true)
+    self.replace self.camelize(first_letter_in_uppercase)
+    self
   end
 
 end

@@ -1,3 +1,5 @@
+= Version 0.1.5.6
+* Camelize from ActiveSupport::Inflector (to use outside of Rails)
 = Version 0.1.5.5
 * String to class converter: "Fixnum".to_class #=> Fixnum
 = Version 0.1.5.3
