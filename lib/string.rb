@@ -87,4 +87,25 @@ class String
     self
   end
 
+  def is_number?
+    self.match(/\A[+-]?\d+?(\.\d+)?\Z/) == nil ? false : true
+  end
+
+  # Allows you turning a string into a class if class with provided name exists
+  # Examples:
+  # "Fixnum".to_class #=> Fixnum
+  # "Something".to_class #=> nil
+  class String
+    def to_class
+      chain = self.split "::"
+      klass = Kernel
+      chain.each do |klass_string|
+        klass = klass.const_get klass_string
+      end
+      klass.is_a?(Class) ? klass : nil
+    rescue NameError
+      nil
+    end
+  end
+
 end

@@ -1,3 +1,5 @@
+= Version 0.1.5.5
+* String to class converter: "Fixnum".to_class #=> Fixnum
 = Version 0.1.5.3
 * Workaround for Rails dev env
 = Version 0.1.5

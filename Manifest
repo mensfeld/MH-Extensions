@@ -15,5 +15,4 @@ lib/mh_extensions.rb
 lib/rand.rb
 lib/range.rb
 lib/string.rb
-lib/string_ext.rb
 lib/txt_file_handler.rb
