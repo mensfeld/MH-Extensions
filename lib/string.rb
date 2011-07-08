@@ -78,7 +78,7 @@ class String
 
   # Zamiana CamelCase na underline
   def underlinize
-    self.split(/(?=[A-Z])/).join('_').downcase
+    self.split(/(?=[A-Z])/).join('_').downcase.gsub("::_", "/")
   end
 
   # Zamiana CamelCase na underline na sobie
