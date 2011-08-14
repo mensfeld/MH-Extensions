@@ -1,3 +1,5 @@
+= Version 0.1.5.8
+* Fix in act_as_tree extensions
 = Version 0.1.5.7
 * Underlinize upgraded to handle modules (namespaces)
 = Version 0.1.5.6

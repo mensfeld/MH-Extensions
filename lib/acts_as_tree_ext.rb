@@ -32,7 +32,7 @@ class ActiveRecord::Base
     parent = self.parent_id
     while !stop
       el =  parent ? self.class.find(parent) : nil
-      if el
+      if el && el.parent_id != el.id
         parent = el.parent_id
         levels += 1
       else

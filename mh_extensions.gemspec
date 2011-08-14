@@ -2,11 +2,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{mh_extensions}
-  s.version = "0.1.5.7"
+  s.version = "0.1.5.8"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 1.2") if s.respond_to? :required_rubygems_version=
   s.authors = [%q{Maciej Mensfeld}]
-  s.date = %q{2011-07-08}
+  s.date = %q{2011-08-14}
   s.description = %q{Package of usefull ruby basic classes (and not only) extensions}
   s.email = %q{maciej@mensfeld.pl}
   s.extra_rdoc_files = [%q{CHANGELOG.rdoc}, %q{README.md}, %q{lib/activerecord_ext.rb}, %q{lib/acts_as_tree_ext.rb}, %q{lib/array.rb}, %q{lib/browser_detector.rb}, %q{lib/date_ext.rb}, %q{lib/hash.rb}, %q{lib/mh_extensions.rb}, %q{lib/rand.rb}, %q{lib/range.rb}, %q{lib/string.rb}, %q{lib/txt_file_handler.rb}]
