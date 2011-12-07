@@ -2,11 +2,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{mh_extensions}
-  s.version = "0.1.5.9"
+  s.version = "0.1.6.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 1.2") if s.respond_to? :required_rubygems_version=
   s.authors = [%q{Maciej Mensfeld}]
-  s.date = %q{2011-08-14}
+  s.date = %q{2011-12-07}
   s.description = %q{Package of usefull ruby basic classes (and not only) extensions}
   s.email = %q{maciej@mensfeld.pl}
   s.extra_rdoc_files = [%q{CHANGELOG.rdoc}, %q{README.md}, %q{lib/activerecord_ext.rb}, %q{lib/acts_as_tree_ext.rb}, %q{lib/array.rb}, %q{lib/browser_detector.rb}, %q{lib/date_ext.rb}, %q{lib/hash.rb}, %q{lib/mh_extensions.rb}, %q{lib/rand.rb}, %q{lib/range.rb}, %q{lib/string.rb}, %q{lib/txt_file_handler.rb}]
@@ -22,8 +22,11 @@ Gem::Specification.new do |s|
     s.specification_version = 3
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
+      s.add_runtime_dependency(%q<babosa>, [">= 0"])
     else
+      s.add_dependency(%q<babosa>, [">= 0"])
     end
   else
+    s.add_dependency(%q<babosa>, [">= 0"])
   end
 end
