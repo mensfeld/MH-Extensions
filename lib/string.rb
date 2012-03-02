@@ -1,6 +1,8 @@
 # coding: utf-8
 # Dodatkowe metody klasy string
 
+include ActionView::Helpers::SanitizeHelper
+
 class String
 
   def sanitize(options={})
