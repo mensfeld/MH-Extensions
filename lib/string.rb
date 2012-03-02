@@ -3,6 +3,22 @@
 
 class String
 
+  def sanitize(options={})
+    ActionController::Base.helpers.sanitize(self, options)
+  end
+
+  def sanitize!(options={})
+    self.replace self.sanitize(options)
+  end
+
+  def strip_tags
+    ActionView::Helpers::SanitizeHelper.strip_tags(self)
+  end
+
+  def strip_tags!
+    self.replace strip_tags
+  end
+
   # Czy cenzurowano a jesli tak to ile niedobrych słów było
   @censored_words = false
 

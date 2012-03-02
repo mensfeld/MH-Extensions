@@ -1,3 +1,7 @@
+= Version 0.1.6.2
+* Strip_tags as a string instance method
+= Version 0.1.6.1
+* Sanitize as a String instance method
 = Version 0.1.6.0
 * Moved to Babosa when trimming for to_url method
 = Version 0.1.5.9
