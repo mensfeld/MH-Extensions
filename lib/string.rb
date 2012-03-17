@@ -32,6 +32,7 @@ class String
     temp.gsub!(/\s/,'-')
     temp.gsub!(/\-+$/,'')
     temp.gsub!(/^\-+/,'')
+    temp.gsub!(/\-{2,}/, '-')
     temp
   end
 
