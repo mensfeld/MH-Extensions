@@ -18,6 +18,8 @@ class Array
         @paginate_per_page.to_i
       end
 
+      alias :total_pages :num_pages
+
     EVAL
   end
 end

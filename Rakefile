@@ -3,7 +3,7 @@ require 'rubygems'
 require 'rake'
 require 'echoe'
 
-Echoe.new('mh_extensions', '0.1.6.4') do |p|
+Echoe.new('mh_extensions', '0.1.6.5') do |p|
   p.description    = "Package of usefull ruby basic classes (and not only) extensions"
   p.url            = "https://github.com/mensfeld/MH-Extensions"
   p.author         = "Maciej Mensfeld"
