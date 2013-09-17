@@ -21,13 +21,10 @@ class String
     self.replace strip_tags
   end
 
-  # Czy cenzurowano a jesli tak to ile niedobrych słów było
-  @censored_words = false
-
   # Zwraca strina bez polskich literek, z małej litery, z usuniętymi innymi
   # znakami oraz z zamienioną spacją na pauze (-)
   def to_url
-    temp = self.downcase.to_slug.transliterate.to_s
+    temp = self.to_slug.transliterate.to_s.downcase
     temp.gsub!(/[^a-zA-Z 0-9]/, "")
     temp.gsub!(/\s/,'-')
     temp.gsub!(/\-+$/,'')
@@ -48,36 +45,6 @@ class String
 
   def nl2br!
     self.replace self.nl2br
-  end
-
-  # Przycina tekst do lenght znakow dodajac end_str na koncu
-  def trim(length = 20, end_str = '...')
-    if self.length > length
-      return "#{self[0, length-end_str.length]}#{end_str}"
-    end
-    self
-  end
-
-  # trim tylko wykonane na sobie
-  def trim!(length = 20, end_str = '...')
-    self.replace self.trim(length, end_str)
-    self
-  end
-
-  # Cenzuruje niechciane słowa na podstawie tego co jest w bazie i zwraca
-  def censor(changer = '*')
-    Censor.run(self, changer)
-  end
-
-  # To samo co wyżej tylko operuje na sobie
-  def censor!(changer = '*')
-    @censored_words =  Censor.amount(self)
-    self.replace Censor.run(self, changer)
-  end
-
-  # Czy dany string został ocenzurowany
-  def censored?
-    @censored_words
   end
 
   # Zamiana CamelCase na underline
