@@ -8,6 +8,7 @@ Echoe.new('mh_extensions', '0.1.6.6') do |p|
   p.url            = "https://github.com/mensfeld/MH-Extensions"
   p.author         = "Maciej Mensfeld"
   p.email          = "maciej@mensfeld.pl"
+  p.license        = 'MIT'
   p.dependencies   = ["babosa"]
   p.ignore_pattern = ["tmp/*", "script/*"]
 end
